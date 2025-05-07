@@ -1,3 +1,4 @@
+#1
 print("- Escribir un programa que lea un número entero y determine si está entre 10 y 20 o entre 30 y 40.")
 num = int(input("Introduce un número entero: "))
 if (num >= 10 and num <= 20) or (num >= 30 and num <= 40):
@@ -5,6 +6,7 @@ if (num >= 10 and num <= 20) or (num >= 30 and num <= 40):
 else:
     print("No, el número está fuera de rango")
 
+#2
 print("- Escribir un programa que lea dos números enteros y determine si al menos uno de ellos es par.")
 num1 = int(input("Introduce un número entero: "))
 num2 = int(input("Introduce un número entero: "))
@@ -13,6 +15,7 @@ if num1 % 2 == 0 or num2 % 2 == 0:
 else:
     print("No, ninguno de ellos es par")
 
+#3
 print("- Escribir un programa que lea una cadena de texto y determine si contiene la letra 'a' o la letra 'b'.")
 texto = str(input("Escribe una cadena de texto: "))
 if 'a' in texto or 'b' in texto:
@@ -20,6 +23,7 @@ if 'a' in texto or 'b' in texto:
 else:
     print("No, ninguna de las letras está en el texto")
 
+#4
 print("- Escribir un programa que lea dos números enteros y determine si ambos son pares o ambos son impares.")
 num1 = int(input("Introduce un número entero: "))
 num2 = int(input("Introduce un número entero: "))
@@ -28,6 +32,7 @@ if (num1 % 2 == 0 and num2 % 2 == 0) or (num1 % 2 != 0 and num2 % 2 != 0):
 else:
     print("Los dos números son distintos")
 
+#5
 print("- Escribir un programa que lea una cadena de texto y determine si comienza con la letra 'H' y no contiene la letra 'a'.")
 texto = str(input("Escribe una cadena de texto: "))
 if 'H' in texto[0] and 'a' not in texto:
@@ -35,6 +40,7 @@ if 'H' in texto[0] and 'a' not in texto:
 else:
     print("No, al menos uno de los dos requisitos no se cumplen")
 
+#6
 print("- Escribir un programa que lea tres números enteros y determine si al menos uno de ellos es mayor que 10.")
 num1 = int(input("Introduce un número entero: "))
 num2 = int(input("Introduce un número entero: "))
@@ -44,6 +50,7 @@ if num1 > 10 or num2 > 10 or num3 > 10:
 else:
     print("No, ninguno de ellos es mayor que 10")
 
+#7
 print("- Escribir un programa que lea una cadena de texto y determine si contiene la palabra 'Python' o la palabra 'programación'.")
 texto = str(input("Escribe una cadena de texto: "))
 if 'Python' in texto or 'programación' in texto:
