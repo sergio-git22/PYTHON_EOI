@@ -62,3 +62,62 @@ personas = {'Unai': 39, 'Leire': 31, 'Mikel': 34}
 for persona in personas:
     if persona.startswith("M"):
         print(persona)
+
+#Diccionarios y JSON
+
+#1
+print("- Crea un diccionario con algunos datos y conviértelo a formato JSON.")
+import json
+
+dic = {'Madrid': 4, 'Barcelona': 3, 'Bilbao': 1}
+json_dic = json.dumps(dic)
+print(json_dic)
+
+#2
+print("- Crea una cadena JSON y conviértela a un diccionario.")
+import json
+
+json_datos = '{"Nombre": "Carlos", "Edad": 29, "Ciudad": "Toledo"}'
+dic_datos = json.loads(json_datos)
+print(dic_datos)
+
+#3
+print("- Escribe un programa que pida al usuario introducir un diccionario con los nombres y edades de 3 personas, lo convierta a formato JSON y lo guarde en un archivo.")
+import json
+
+personas = {}
+for i in range(3):
+    nombre = str(input("Escribe un nombre: "))
+    edad = int(input("Escribe su edad: "))
+    personas[nombre] = edad
+
+with open("personas.json", "w") as archivo:
+    json.dump(personas, archivo)
+
+#4
+print("- Escribe un programa que lea un archivo con datos en formato JSON, lo convierta a un diccionario y muestre los nombres de las personas y sus edades. (puedes usar alguno de los anteriores que hemos creado)")
+import json
+
+with open("personas.json", "r") as archivo:
+    datos = json.load(archivo)
+
+for nombre, edad in datos.items():
+    print(nombre + " tiene " + str(edad) + " años ")
+
+#5
+print("- Escribe un programa que pida al usuario introducir un diccionario con algunos datos, lo convierta a formato JSON y luego lo vuelva a convertir a un diccionario.")
+import json
+
+diccionario = {}
+while True:
+    clave = input("Introduce una clave o 'q' para salir: ")
+    if clave == "q":
+        break
+    valor = input("Introduce un valor para " + clave + ": ")
+    datos[clave] = valor
+
+json_diccionario = json.dumps(diccionario)
+print("Datos en formato JSON: " + json_diccionario)
+
+nuevo_dic = json.loads(json_diccionario)
+print("Datos como diccionario: ", nuevo_dic)
