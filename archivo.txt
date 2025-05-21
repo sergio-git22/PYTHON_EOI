@@ -1,0 +1,3 @@
+Esto es un archivo de texto
+Se puede abrir para leerlo
+O puedes escribir y modificar su contenido
